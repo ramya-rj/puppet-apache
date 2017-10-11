@@ -2,7 +2,7 @@ class apache::params {
   case $facts['os']['family'] {
     'Debian':{
       $package_name = 'apache2'
-      $service_name = 'apache'
+      $service_name = 'apache2'
     }
     'RedHat' : {
       $package_name = 'httpd'

@@ -48,5 +48,6 @@ class apache (
 
 ) inherits ::apache::params {
   class { 'apache::install': } ->
+  class { 'apache::config':}   ~>
   class { 'apache::service': }
 }
